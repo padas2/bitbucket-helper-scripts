@@ -10,6 +10,9 @@ function printUsage {
 	echo "--bitbucketServerUrl			: Bitbucket Server Url "
 	echo "--fromValue				: First Id of List of PRs to be declined"
 	echo "--toValue				: Final Id of Pr to be declined"
+	echo ""
+	echo "Sample usage:"
+	echo "$0 --projectKey=<project-key> --repository=<repository> --userSlug=<user-slug> --password=<pwd> --bitbucketServerUrl=<bitbucket-server-url> --fromValue=<first-pr-id> --toValue=<last-pr-id>"
 }
 
 # The below function to extract version of Pull Request from json response has been copied from https://gist.github.com/cjus/1047794. , courtesy of Carlos Justiniano
